@@ -49,11 +49,11 @@
     "en": "Adds a system-prompt section that makes the agent state what each step does in plain words before it runs tools.",
     "zh": "往系统提示里加一段规则：动手前先用一句人话说清这一步要做什么，过程不再只是一串命令行。"
    },
-   "icon": "https://raw.githubusercontent.com/OWNER/dsh-process-narration/main/icon.svg",
+   "icon": "https://raw.githubusercontent.com/I-WANNASLEEP/dsh-process-narration/main/icon.svg",
    "author": "congwei",
-   "homepage": "https://github.com/OWNER/dsh-process-narration",
+   "homepage": "https://github.com/I-WANNASLEEP/dsh-process-narration",
    "repository": {
-    "url": "https://github.com/OWNER/dsh-process-narration"
+    "url": "https://github.com/I-WANNASLEEP/dsh-process-narration"
    },
    "metadata": {
     "category": "ui",
@@ -70,17 +70,17 @@
      "prompt"
     ],
     "sortKeys": {
-     "added": 1794555098
+     "added": 1794555338
     }
    },
    "versions": [
     {
      "version": "0.1.0",
-     "publishTimestamp": 1794555098,
+     "publishTimestamp": 1794555338,
      "source": {
       "type": "git",
-      "url": "https://github.com/OWNER/dsh-process-narration",
-      "commit": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+      "url": "https://github.com/I-WANNASLEEP/dsh-process-narration",
+      "commit": "096b72d8e44505ffde166993d10743fff0274d86"
      }
     }
    ]

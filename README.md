@@ -8,7 +8,25 @@
 
 配合「设置 → 通用 → 工作详情 = 紧凑」，完成后的历史过程会折叠成一行，展开才看到工具卡片——观感接近 Codex。
 
-## 安装位置
+## 从市场安装（给其他人）
+
+索引源（设置 → 插件市场 → 索引源，添加一行）：
+
+```
+https://cdn.jsdelivr.net/gh/I-WANNASLEEP/dsh-process-narration@dist/dsh-index.json
+```
+
+加完在发现页搜「过程人话」或 `narration`，点安装。等价的手动命令（commit 钉在索引里）：
+
+```sh
+dsh plugin --profile web add "git+https://github.com/I-WANNASLEEP/dsh-process-narration.git#<40位commit>"
+```
+
+> 只保留一条入口：若 profile 根 `cordis.patch.yml` 里已经手写了 `process-narration` 的 insert 行，
+> 从市场装之前先删掉它——补丁引擎对顶层 insert 只做 `push` 不按 id 去重，同一个 id 插两次会让
+> `style:process-narration` 撞上重名检查。
+
+## 本机手动安装位置
 
 - 源码：本目录（`~/Documents/deepseek-harness/default-workspace/dsh-process-narration`）
 - profile 链接：`~/.dsh/profiles/desktop/node_modules/dsh-process-narration` → 本目录
