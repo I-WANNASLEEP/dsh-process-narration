@@ -1,4 +1,4 @@
-# dsh-process-narration（过程人话）
+# dsh-process-narration
 
 把 DSH 对话里的「过程」从命令行流水改成人话说明。做法不是改界面，而是在系统提示里固定一段规则，让模型：
 
