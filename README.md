@@ -8,7 +8,27 @@
 
 配合「设置 → 通用 → 工作详情 = 紧凑」，完成后的历史过程会折叠成一行，展开才看到工具卡片——观感接近 Codex。
 
-## 从市场安装（给其他人）
+## 安装
+
+一行命令，不需要配置：
+
+```sh
+dsh plugin --profile desktop add github:I-WANNASLEEP/dsh-process-narration#v0.1.1
+```
+
+- `desktop` 换成你自己的 profile 名（DSH NEXT 用 `desktop`，CLI 版通常是 `web`）。
+- `#v0.1.1` 把版本钉住，作者更新也不会被动升级；想去掉就删这一段。
+- 装完**重启 DSH**。验证：新开一个会话让它跑条命令，过程里应先出现一句中文人话
+  （「先看一眼这个目录里有什么」），而不是直接甩命令行。
+- 卸载：`dsh plugin --profile desktop remove dsh-process-narration`
+
+也可以用镜像装（GitHub 慢的时候）：
+
+```sh
+dsh plugin --profile desktop add "git+https://github.com/I-WANNASLEEP/dsh-process-narration.git#v0.1.1"
+```
+
+## 从市场安装（可选）
 
 索引源（设置 → 插件市场 → 索引源，添加一行）：
 
@@ -16,11 +36,7 @@
 https://cdn.jsdelivr.net/gh/I-WANNASLEEP/dsh-process-narration@dist/dsh-index.json
 ```
 
-加完在发现页搜「过程人话」或 `narration`，点安装。等价的手动命令（commit 钉在索引里）：
-
-```sh
-dsh plugin --profile web add "git+https://github.com/I-WANNASLEEP/dsh-process-narration.git#<40位commit>"
-```
+加完在发现页搜「过程人话」或 `narration`，点安装。
 
 > 只保留一条入口：若 profile 根 `cordis.patch.yml` 里已经手写了 `process-narration` 的 insert 行，
 > 从市场装之前先删掉它——补丁引擎对顶层 insert 只做 `push` 不按 id 去重，同一个 id 插两次会让
