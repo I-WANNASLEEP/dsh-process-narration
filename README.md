@@ -42,12 +42,6 @@ https://cdn.jsdelivr.net/gh/I-WANNASLEEP/dsh-process-narration@dist/dsh-index.js
 > 从市场装之前先删掉它——补丁引擎对顶层 insert 只做 `push` 不按 id 去重，同一个 id 插两次会让
 > `style:process-narration` 撞上重名检查。
 
-## 本机手动安装位置
-
-- 源码：本目录（`~/Documents/deepseek-harness/default-workspace/dsh-process-narration`）
-- profile 链接：`~/.dsh/profiles/desktop/node_modules/dsh-process-narration` → 本目录
-- 装配：`~/.dsh/profiles/desktop/cordis.patch.yml` 增加一行
-  `- { id: process-narration, name: dsh-process-narration }`
 
 ## 配置
 
