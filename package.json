@@ -1,0 +1,40 @@
+{
+  "name": "dsh-process-narration",
+  "version": "0.1.0",
+  "description": "过程人话：给 DeepSeek Harness 的系统提示加一段规则，让 agent 动手前先用一句人话说清意图、把工具说明写成人话，过程不再只是一串命令行。",
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "lib/index.js",
+    "cordis.patch.yml",
+    "README.md",
+    "icon.svg"
+  ],
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "narration",
+    "process",
+    "system-prompt"
+  ],
+  "license": "MIT",
+  "author": "congwei",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/I-WANNASLEEP/dsh-process-narration.git"
+  },
+  "homepage": "https://github.com/I-WANNASLEEP/dsh-process-narration#readme",
+  "bugs": {
+    "url": "https://github.com/I-WANNASLEEP/dsh-process-narration/issues"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  }
+}

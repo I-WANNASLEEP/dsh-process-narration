@@ -1,0 +1,7 @@
+url: https://github.com/I-WANNASLEEP/dsh-process-narration
+name: I-WANNASLEEP/dsh-process-narration
+category: ui
+description:
+  en: Adds a system-prompt section that makes the agent state what each step does in plain words before it runs tools.
+  zh: '往系统提示里加一段规则：动手前先用一句人话说清这一步要做什么，过程不再只是一串命令行。'
+icon: https://raw.githubusercontent.com/I-WANNASLEEP/dsh-process-narration/main/icon.svg
