@@ -70,17 +70,17 @@
      "prompt"
     ],
     "sortKeys": {
-     "added": 1794555583
+     "added": 1794559380
     }
    },
    "versions": [
     {
-     "version": "0.1.0",
-     "publishTimestamp": 1794555583,
+     "version": "0.1.1",
+     "publishTimestamp": 1794559380,
      "source": {
       "type": "git",
       "url": "https://github.com/I-WANNASLEEP/dsh-process-narration",
-      "commit": "33d627b868cb4ec3d3361b4f019b55036ca00f6a"
+      "commit": "0eecdf7f955d23f1276b4e786548076f49492b75"
      }
     }
    ]
