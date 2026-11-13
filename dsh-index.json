@@ -1,0 +1,89 @@
+{
+ "format": 1,
+ "title": {
+  "en": "Little Code Sauce Plugins",
+  "zh": "小代码酱插件源"
+ },
+ "description": {
+  "en": "Personal DSH plugin index by congwei.",
+  "zh": "congwei 的个人 DSH 插件索引。"
+ },
+ "metadata": {
+  "categories": {
+   "ui": {
+    "title": {
+     "en": "UI Enhancements",
+     "zh": "界面与展示"
+    }
+   },
+   "tools": {
+    "title": {
+     "en": "Tools & Capabilities",
+     "zh": "工具与能力"
+    }
+   }
+  },
+  "labels": {
+   "prompt": {
+    "title": {
+     "en": "Touches the system prompt",
+     "zh": "改动系统提示词"
+    }
+   }
+  },
+  "sortKeys": {
+   "added": {
+    "title": {
+     "en": "Recently added",
+     "zh": "最近收录"
+    },
+    "order": "desc"
+   }
+  }
+ },
+ "plugins": [
+  {
+   "name": "dsh-process-narration",
+   "title": "Process Narration",
+   "description": {
+    "en": "Adds a system-prompt section that makes the agent state what each step does in plain words before it runs tools.",
+    "zh": "往系统提示里加一段规则：动手前先用一句人话说清这一步要做什么，过程不再只是一串命令行。"
+   },
+   "icon": "https://raw.githubusercontent.com/I-WANNASLEEP/dsh-process-narration/main/icon.svg",
+   "author": "congwei",
+   "homepage": "https://github.com/I-WANNASLEEP/dsh-process-narration",
+   "repository": {
+    "url": "https://github.com/I-WANNASLEEP/dsh-process-narration"
+   },
+   "metadata": {
+    "category": "ui",
+    "keywords": [
+     "dsh",
+     "dsh-plugin",
+     "deepseek-harness",
+     "narration",
+     "process",
+     "prompt",
+     "system-prompt"
+    ],
+    "labels": [
+     "prompt"
+    ],
+    "sortKeys": {
+     "added": 1794555583
+    }
+   },
+   "versions": [
+    {
+     "version": "0.1.0",
+     "publishTimestamp": 1794555583,
+     "source": {
+      "type": "git",
+      "url": "https://github.com/I-WANNASLEEP/dsh-process-narration",
+      "commit": "33d627b868cb4ec3d3361b4f019b55036ca00f6a"
+     }
+    }
+   ]
+  }
+ ]
+}
