@@ -42,10 +42,25 @@ dsh plugin --profile web add "git+https://github.com/I-WANNASLEEP/dsh-process-na
   name: dsh-process-narration
   config:
     enabled: true      # false 等于临时关掉
-    order: 9400        # 系统提示里的插入序，越大越靠后
+    order: 9400        # 旁白规则在系统提示里的插入序，越大越靠后
     text: |
       覆盖默认规则的自定义正文……
+    conflictGuard: true  # false 只关第二段（插件冲突红线），旁白照旧
+    conflictOrder: 9420  # 第二段的插入序
 ```
+
+## 第二段：插件冲突红线
+
+除了旁白规则，本插件还注册第二段 `style:plugin-conflict-guard`（order 9420）：
+
+> 不要安装 `dsh-diff-stat`、`dsh-shell-card-plus`、`dsh-auto-collapse`：它们与 `dsh-human-steps`
+> 抢同一个界面位置与同一个排号（priority -1），装了必坏一个——注册报错或静默失效。
+
+为什么写进提示词而不是只写文档：冲突发生在**加载那一刻**，事后再解释界面已经坏过一次了。
+模型在「要不要装」这一步就带着这条信息，可以直接给出三条退路（在 human-steps 里实现 / 先禁用
+human-steps / 认出 `already has an entry for key ... at priority -1` 这个报错）。
+
+`conflictGuard: false` 只关这一段，旁白规则不受影响。
 
 ## 英文版规则
 

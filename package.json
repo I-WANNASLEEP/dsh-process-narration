@@ -1,6 +1,6 @@
 {
   "name": "dsh-process-narration",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "过程人话：给 DeepSeek Harness 的系统提示加一段规则，让 agent 动手前先用一句人话说清意图、把工具说明写成人话，过程不再只是一串命令行。",
   "type": "module",
   "main": "lib/index.js",
